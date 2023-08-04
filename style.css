@@ -1,0 +1,134 @@
+*{
+    transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --dark-violet: hsl(257, 27%, 26%);
+    --primary-cyan: hsl(180, 66%, 49%);
+    --secondary-red: hsl(0, 87%, 67%);
+
+    --neutral-violet: hsl(257, 7%, 63%);
+    --neutral-gray: hsl(0, 0%, 75%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    color: var(--neutral-gray);
+}
+
+nav > .logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--very-dark-violet);
+   
+}
+
+.nav-links .menu-list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-list li:hover{
+    cursor: pointer;
+    color: var(--very-dark-violet);
+}
+
+.nav-links .auth-links{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.auth-links li:hover{
+    cursor: pointer;
+    color: var(--very-dark-violet);
+}
+
+.auth-links #sign-up{
+    background-color: var(--primary-cyan);
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+#menu-icon{
+    width: 60px;
+    height: 60px;
+    color: var(--neutral-gray);
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.hero-container .title{
+    font-size: 5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--very-dark-violet);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+.hero-container .sub-title{
+    color: var(--neutral-gray);
+    font-size: 1.375rem;
+    line-height: 1.75;
+    margin-bottom: 35px;
+}
+.button{
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-cyan) !important;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 34px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.button:hover {
+  background: #9be3e2 !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 600px){
+    .nav-links{
+        display: none;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
