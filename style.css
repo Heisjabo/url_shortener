@@ -19,6 +19,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+body,
+html{
+    overflow-x: hidden;
+    height: 100%;
+}
 
 nav{
     display: flex;
@@ -113,7 +118,7 @@ nav > .logo{
     background: var(--primary-cyan) !important;
     color: #fff;
     cursor: pointer;
-    padding: 10px 34px;
+    padding: 10px 30px;
     font-weight: 700;
     font-size: 1.25rem;
 }
@@ -122,13 +127,199 @@ nav > .logo{
   color: #fff !important;
 }
 
+/* services section */
+
+#services {
+  background: #f0f1f6;
+  padding-top: 160px;
+  position: relative;
+  padding-top: 120px;
+}
+
+#services .shorten {
+    display: flex;
+    width: 80%;
+    height: 160px;
+    margin: 0 auto;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    left: 0;
+    background: #3b3054;
+    border-radius: 10px;
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services .shorten input {
+    height: 64px;
+    padding: 10px 5px;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0 30px;
+    color: #9e9aa7;
+}
+
+#services .shorten input.err {
+  border: 3px solid #f46262;
+}
+
+#services .shorten input:focus {
+  border: 3px solid #9be3e2;
+}
+.shorten form{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.shorten-btn{
+    width: 20%;
+    height: 64px !important;
+    border-radius: 10px !important;
+}
+
+.statistics-text{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.statistics-text .title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--very-dark-violet);
+}
+
+.statistics-text .sub-title{
+    color: var(--neutral-gray);
+    font-size: 1.125rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.menu-icon{
+    display: none;
+    color: var(--neutral-gray);
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* service cards */
+
+.cards {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 60px;
+    position: relative !important;
+    gap: 24px;
+    padding-bottom: 60px;
+}
+.cards .item{
+    padding: 85px 33px 33px 33px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    height: 100%;
+}
+
+
+.cards #hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 8px solid #2acfcf;
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  left: 40px;
+}
+
+.cards .item .img-cont{
+    background: #3b3054 !important;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    position: absolute;
+    border-radius: 100%;
+    top: -40px;
+}
+
+.cards .item .title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #35323e;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+
+.cards .item .desc {
+  color: #9e9aa7;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+.cards .second {
+  margin-top: 40px !important;
+}
+
+.cards .third {
+  margin-top: 80px !important;
+}
+
+
 @media only screen and (max-width: 600px){
     .nav-links{
         display: none;
     }
-    
+    .menu-icon{
+        display: block;
+    }
+
     nav{
         display: flex;
         justify-content: space-between;
+    }
+    .hero-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .shorten form{
+        flex-direction: column;
+    }
+    .shorten-btn{
+        width: 90%;
+        height: 64px !important;
+        border-radius: 10px !important;
+    }
+    .shorten input{
+        width: 90%;
+    }
+    .hero-container .title{
+        font-size: 3rem;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #services .shorten{
+        top: -20px;
     }
 }
