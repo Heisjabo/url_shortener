@@ -33,6 +33,11 @@ nav{
     gap: 15px;
     margin: 0 auto;
     width: 80%;
+    position: relative;
+}
+
+.nav-hr{
+    display: none;
 }
 
 .nav-links{
@@ -193,7 +198,7 @@ nav > .logo{
     margin: 0 auto;
     width: 60%;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .statistics-text .title{
@@ -366,8 +371,34 @@ footer .icons {
 }
 
 @media only screen and (max-width: 600px){
+    .navbar-collapse {
+        background: var(--dark-violet);
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px 25px;
+        color: white;
+        top: 80%;
+        width: 100%;
+        position: absolute;
+    }
+    .navbar-collapse ul li{
+        cursor: pointer;
+        font-size: 18px;
+        list-style-type: none;
+        margin: 20px 0;
+    }
     .nav-links{
         display: none;
+    }
+    .nav-links li:hover{
+        color: white;
+    }
+    .auth-links li:hover{
+        cursor: pointer;
+        color: white;
+    }
+    .nav-hr{
+        display: block;
     }
     .menu-icon{
         display: block;
@@ -376,12 +407,14 @@ footer .icons {
     nav{
         display: flex;
         justify-content: space-between;
+        width: 90%;
     }
     .hero-container{
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
         text-align: center;
+        padding: 30px 0;
     }
     .shorten form{
         flex-direction: column;
@@ -391,8 +424,10 @@ footer .icons {
         height: 64px !important;
         border-radius: 10px !important;
     }
-    .shorten input{
-        width: 90%;
+    
+    .shorten input {
+        width: 90% !important;
+        padding: 0 20px;
     }
     .hero-container .title{
         font-size: 3rem;
@@ -402,6 +437,49 @@ footer .icons {
     #services .shorten{
         top: -20px;
     }
+
+    .statistics-text{
+        width: 85%;
+        padding: 60px 0;
+    }
+
+    .statistics-text .title{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .cards #hr {
+        bottom: 140px;
+        top: auto;
+        margin: 0 auto;
+        width: 8px;
+        border-top: 570px solid var(--primary-cyan);
+    }
+    .cards .item .img-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px !important;
+        border-radius: 100%;
+        height: 80px;
+        right: 40%;
+        margin: 0 auto !important;
+        align-self: center;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 0;
+    }
+    .cards .item{
+        text-align: center;
+    }
+    .cards .second {
+        margin-top: 60px !important;
+    }
+
+    .cards .third {
+        margin-top: 80px !important;
+    }   
 
 
     /* footer */

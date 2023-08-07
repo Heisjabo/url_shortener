@@ -13,12 +13,13 @@
 <body>
     <nav>
         <h1 class="logo">Shortly</h1>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-menu">
             <ul class="menu-list">
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>Resources</li>
             </ul>
+            <hr class="nav-hr" />
             <ul class="auth-links">
                 <li>Login</li>
                 <li id="sign-up" class="button">Sign Up</li>
@@ -28,23 +29,23 @@
     </nav>
     <!-- hero section -->
     <section id="hero-section">
-            <div class="hero-container">
-                <div class="welcom-text">
-                    <h1 class="title">More than just<br>shorter links</h1>
-                    <p class="sub-title">Build your brand’s recognition and get detailed insights
-                    on how your links are performing.</p>
-                    <button class="button">Get Started</button>
-                </div>
-                <img src="./images/illustration-working.svg" alt="Working illustration" class="illustration" />
+        <div class="hero-container">
+            <div class="welcom-text">
+                <h1 class="title">More than just<br>shorter links</h1>
+                <p class="sub-title">Build your brand’s recognition and get detailed insights
+                on how your links are performing.</p>
+                <button class="button">Get Started</button>
             </div>
+            <img src="./images/illustration-working.svg" alt="Working illustration" class="illustration" />
+        </div>
     </section>
     <section id="services">
-            <div class="shorten">
-                <form action="#" id="shorten-form">
-                    <input type="text" id="url-input" name="url" placeholder="Shorten a link here...">
-                    <p id="err-msg"></p>
-                    <button id="shorten" class="button shorten-btn">Shorten It!</button>
-                </form>
+        <div class="shorten">
+            <form id="shorten-form">
+                <input type="text" id="url-input" name="url" placeholder="Shorten a link here...">
+                <p id="err-msg"></p>
+                <button id="shorten" class="button shorten-btn">Shorten It!</button>
+            </form>
             </div>
             <div class="statistics-text">
                 <h2 class="title">Advanced Statistics</h2>
@@ -73,7 +74,6 @@
                     <h3 class="title">Fully Customizable</h3>
                     <p class="desc">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
                 </div>
-
             </div>
     </section>
     <section id="boost">
@@ -88,31 +88,32 @@
         </div>
         <div class="item">
             <p class="title">Features</p>
-            <a href="#" class="smooth-scroll">Link Shortening</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Branded Links</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Analytics</a>
+            <a href="#">Link Shortening</a>
+            <a href="#">Branded Links</a>
+            <a href="#">Analytics</a>
         </div>
         <div class="item">
             <p class="title">Resources</p>
-            <a href="#" data-toggle="modal" data-target="#popup">Blog</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Developers</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Support</a>
+            <a href="#">Blog</a>
+            <a href="#">Developers</a>
+            <a href="#">Support</a>
         </div>
         <div class="item">
             <p class="title">Company</p>
-            <a href="#" data-toggle="modal" data-target="#popup">About</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Our Team</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Careers</a>
-            <a href="#" data-toggle="modal" data-target="#popup">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
         </div>
         <div class="icons">
-            <a href="#" data-toggle="modal" data-target="#popup" class="socmed"><img src="./images/icon-facebook.svg" alt="Facebook" /></a>
-            <a href="#" data-toggle="modal" data-target="#popup" class="socmed"><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
-            <a href="#" data-toggle="modal" data-target="#popup" class="socmed"><img src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
-            <a href="#" data-toggle="modal" data-target="#popup" class="socmed"><img src="./images/icon-instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram" /></a>
         </div>
     </div>
     </footer>
+    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/63e00a6191.js" crossorigin="anonymous"></script>
 </body>
 </html>
