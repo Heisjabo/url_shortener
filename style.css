@@ -134,6 +134,7 @@ nav > .logo{
   padding-top: 160px;
   position: relative;
   padding-top: 120px;
+  margin-top: 30px;
 }
 
 #services .shorten {
@@ -192,6 +193,7 @@ nav > .logo{
     margin: 0 auto;
     width: 60%;
     text-align: center;
+    padding-top: 40px;
 }
 
 .statistics-text .title{
@@ -284,6 +286,84 @@ nav > .logo{
   margin-top: 80px !important;
 }
 
+#boost{
+    height: 250px;
+    background: var(--dark-violet);
+    background-image: url('./images/bg-boost-desktop.svg');
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boost .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#boost .title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+/* footer */
+
+footer {
+    background: var(--very-dark-violet);
+    color: #fff;
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+footer.item{
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+footer .item a {
+    color: var(--neutral-gray);
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-cyan);
+    text-decoration: none;
+}
+
+footer a:focus {
+    outline: 0;
+    color: var(--neutral-violet);
+}
+
+footer .title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer .logo {
+    filter: invert(1) brightness(3);
+}
+
+footer .icons {
+    display: flex !important;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row !important;
+}
 
 @media only screen and (max-width: 600px){
     .nav-links{
@@ -321,5 +401,26 @@ nav > .logo{
     }
     #services .shorten{
         top: -20px;
+    }
+
+
+    /* footer */
+
+    footer {
+        padding: 75px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        padding: 40px 60px;
+    }
+
+    footer .icons {
+        gap: 0px;
+        justify-content: baseline;
+        padding: 15px 5px;
+    }
+    footer .title {
+        margin: 20px 0px;
     }
 }
